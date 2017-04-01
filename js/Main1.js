@@ -5,12 +5,12 @@ var numeri = [1, 3, 5, 7, 9, 11,13,15];
 var estratti=[-1,-1,-1,-1,-1,-1,-1,-1];
 var num=0;
 var i,supporto;
-var rand
+var rand;
 
     for (i=0;i<8; i++)
     {
         rand=randomize();
-        document.write("<img src='../img/" + numeri[rand] + ".png' id='"+rand+"' vspace='120%' hspace='10%'>");
+        document.write('<img src="../img/'+ numeri[rand]+'.png" id="'+rand+'.png">');
     }
 
 
