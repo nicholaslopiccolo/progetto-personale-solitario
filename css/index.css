@@ -1,6 +1,8 @@
-body {
+body
+{
     background-color: black;
 }
+
 #0
 {
     position: relative;
@@ -14,13 +16,11 @@ body {
     width:64px;
     height: 64px;
 }
-}
 #2
 {
     float:left;
     width:64px;
     height: 64px;
-}
 }
 #3
 {
@@ -28,13 +28,11 @@ body {
     width:64px;
     height: 64px;
 }
-}
 #4
 {
     float:left;
     width:64px;
     height: 64px;
-}
 }
 #5
 {
@@ -42,18 +40,15 @@ body {
     width:64px;
     height: 64px;
 }
-}
 #6
 {
     float:left;
     width:64px;
     height: 64px;
 }
-}
 #7
 {
     float:left;
     width:64px;
     height: 64px;
-}
 }

@@ -1,0 +1,138 @@
+#tutti i seguenti metodi sono da riorganizzare
+#fonte http://www.dis.uniroma1.it/~degiacom/didattica/tprog/materiale/Dispense/TuttoOrdinamento2up.pdf
+
+#primo metodo di riordinamento selectionSort
+
+public static void selectionSort(int[] a) {
+int n = a.length;
+for (int i=0; i<n-1; i++) {
+// trova il piu’ piccolo elemento d
+aian-1
+int jmin = i;
+for (int j=i+1; j<n; j++) {
+if (a[j]<a[jmin])
+jmin = j;
+}
+// scambia gli element
+i i e jmin
+int aux = a[jmin];
+a[jmin] = a[i];
+a[i] = aux;
+}
+}
+
+#secondo metodo bubbleSort da Scrivere, utilizzare un do-while ed un for
+
+
+#terzo metodo insertionSort
+
+public static void insertionSort(int[] a) {
+for(inti=1;i<
+a.length; i++) {
+// gli elementi tr
+a 0 e i-1 sono gia’ ordinati
+// inserisci l’elemento i tra gli elementi ordinati
+//nella giusta posizione
+int tmp = a[i];
+int j;
+for(j=i;j>0&&
+a[j-1] > tmp; j--)
+a[j] = a[j-1];
+a[j] = tmp;
+}
+}
+
+#quarto metodo mergeSort
+
+public class mergeSort {
+public static void sort(int v[]) {
+sort(v,0,v.length-1);
+}
+private static void mergesort(int[] v, int inf, int sup) {
+if (inf < sup) {
+int med = (inf+sup)/2;
+mergesort(v,inf,med);
+mergesort(v,med+1,sup);
+merge(v,inf,med,sup);
+}
+}
+Tecniche di Programmazione — Corsi di Laurea in Ingegneria Informatica ed Automatica — A.A. 2003/2004
+15
+Ordinamento di un array
+private static void merge(int[] v, int inf, int med, int sup) {
+int[] a = new int[sup-inf+1];
+int i1 = inf;
+int i2 = med+1;
+int i = 0;
+while ((i1 <= med)&&(i2 <= sup)) { // entrambi i vettori
+//contengono elementi
+if (v[i1] <= v[i2]) {
+a[i] = v[i1];
+i1++;
+i++;
+}
+else {
+a[i] = v[i2];
+i2++;
+i++;
+}
+}
+if (i2 > sup) // e’ finito prima il secondo pezzo del vettore
+for (int k = i1; k <= med; k++) {
+a[i] = v[k];
+i++;
+}
+else // e’ finito prima il primo pezzo del vettore
+for (int k = i2; k <= sup; k++) {
+a[i] = v[k];
+i++;
+}
+// copiamo il vettore ausiliario nel vettore originario
+for(int k = 0
+; k < a.length; k++)
+v[inf+k] = a[k];
+}
+}
+
+
+#quinto ed ultimo metodo QuickSort
+
+public class QuickSort {
+public static void sort(int[] a) {
+quicksort(a,0,a.length-1);
+}
+public static void quickSort(int[] a,int inf, int sup) {
+if (inf >= sup) return;
+else {
+int posPivot scegliPivot(a,inf,sup);
+int k = partition(a, inf, sup, posPivot);
+quicksort(a,inf,k);
+quicksort(a,k+1,sup);
+}
+}
+20
+Ordinamento di un array
+private static int scegliPivot(int[] a, int inf, int sup) {
+//si consulti un libro di alg. e stutt. dati
+//per criteri di scelta avanzati.
+//Noi scegliamo semplicemente il primo elemento
+return inf;
+}
+private static int partition(int[] a, int inf, int sup, int posPivot) {
+int i = inf;
+int j = sup;
+int pivot = a[posPivot];
+while (i < j) {
+while (a[i] < pivot) i++;
+while (a[j] > pivot) j--;
+if(i<j){
+// ora a[i] > pivot e a[j] < pivot
+// quindi scambio a[i] e a[j]
+int tmp = a[i];
+a[i] = a[j];
+a[j] = tmp;
+}
+}
+return i;
+}
+}
