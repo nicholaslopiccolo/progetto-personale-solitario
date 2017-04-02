@@ -1,29 +1,59 @@
-body
-{
+body {
     background-color: black;
-    left:10px;
-    padding:2%;
-    color:#FFFFFF;
 }
-#contenitore
+#0
 {
-    position:absolute;
-    left:10px;
-    top:10px;
-    height: 300px;
-    width:1280px;
-    border:1px solid #003366;
-    padding:5px;
-    color:#FFFFFF;
+    position: relative;
+    float:left;
+    width:64px;
+    height:64px;
 }
-.fotoBoxContent {
-    width: 440px;
-    float: left;
-}
-.fotoBox img {
-    float: left;
-    margin-right: 1em;
-    width: 64px;
+#1
+{
+    float:left;
+    width:64px;
     height: 64px;
-    border: none;
+}
+}
+#2
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
+}
+#3
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
+}
+#4
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
+}
+#5
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
+}
+#6
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
+}
+#7
+{
+    float:left;
+    width:64px;
+    height: 64px;
+}
 }

@@ -4,20 +4,24 @@
 var div1,div2;
 var m_sec=30;
 var id;
+
 window.onload = MoveObject;
+
 function MoveObject()
 {
-div1=document.getElementById("1");
-//div2=document.getElementById('1');
-//div2.style.top ="0px";
+div1=document.getElementById("0");
+div1.stylesheet.left="100px";
 animate();
 }
 function animate()
 {
-div1.
-//div2.style.top=parseInt(div2.style.top)+2+"px";
-id = setTimeout(animate,m_sec);
-
+    if (div1==null)
+            alert("errore pingone");
+    else
+        {
+            div1.style.left = parseInt(div1.style.left) - 2 + "px";
+            id = setTimeout(animate, m_sec);
+        }
 }
 function spostaPrima()
 {

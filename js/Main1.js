@@ -10,9 +10,8 @@ var rand;
     for (i=0;i<8; i++)
     {
         rand=randomize();
-        document.write('<div class="fotoBoxContent"'+'<img id="'+rand+'.png" src="../img/'+ numeri[rand]+'.png">');
+        document.write('<div id="'+rand+'">'+'<img src="../img/'+ numeri[rand]+'.png"></div>');
     }
-
 
 //funzione randomica con controllo dei numeri doppi
 function randomize()
