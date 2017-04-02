@@ -9,13 +9,12 @@ function MoveObject()
 {
 div1=document.getElementById("1");
 //div2=document.getElementById('1');
-div1.style.top="0px";
 //div2.style.top ="0px";
 animate();
 }
 function animate()
 {
-div1.style.top=parseInt(div1.style.top)+2+"px";
+div1.
 //div2.style.top=parseInt(div2.style.top)+2+"px";
 id = setTimeout(animate,m_sec);
 

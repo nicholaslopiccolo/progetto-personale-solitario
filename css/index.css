@@ -16,25 +16,14 @@ body
     padding:5px;
     color:#FFFFFF;
 }
-#0
-{
-    position:absolute;
-    left:10px;
-    top:10px;
-    height: 300px;
-    width:1280px;
-    border:1px solid #003366;
-    padding:5px;
-    color:#FFFFFF;
+.fotoBoxContent {
+    width: 440px;
+    float: left;
 }
-#1
-{
-    position:absolute;
-    left:10px;
-    top:10px;
-    height: 300px;
-    width:1280px;
-    border:1px solid #003366;
-    padding:5px;
-    color:#FFFFFF;
+.fotoBox img {
+    float: left;
+    margin-right: 1em;
+    width: 64px;
+    height: 64px;
+    border: none;
 }
