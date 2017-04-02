@@ -6,11 +6,14 @@ var estratti=[-1,-1,-1,-1,-1,-1,-1,-1];
 var num=0;
 var i,supporto;
 var rand;
+var k=-120;
 
     for (i=0;i<8; i++)
     {
         rand=randomize();
-        document.write('<div id="'+rand+'">'+'<img src="../img/'+ numeri[rand]+'.png"></div>');
+        k=k+130;
+        //document.write('<div id="'+rand+'">'+'<img src="../img/'+ numeri[rand]+'.png"></div>');
+        document.write('<img id="'+rand+'" src="../img/'+ numeri[rand]+'.png" style="position:absolute;padding-left:'+k+'px;padding-top: 500px;">');
     }
 
 //funzione randomica con controllo dei numeri doppi

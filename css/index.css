@@ -2,53 +2,7 @@ body
 {
     background-color: black;
 }
-
-#0
-{
-    position: relative;
-    float:left;
-    width:64px;
-    height:64px;
-}
-#1
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#2
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#3
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#4
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#5
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#6
-{
-    float:left;
-    width:64px;
-    height: 64px;
-}
-#7
-{
-    float:left;
-    width:64px;
-    height: 64px;
+.contenitore_bottoni{
+    border-color: white;
+    padding:2%;
 }
