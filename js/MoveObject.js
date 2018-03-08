@@ -2,7 +2,7 @@
  * Created by nicholas on 30/03/17.
  */
 var div;
-var m_sec=15;
+var m_sec=5;
 var id;
 
 window.onload = MoveObject;
@@ -12,19 +12,6 @@ function MoveObject()
     div=document.getElementById("0");
 spostaPrima();
 }
-
-//funzione di prova per lo spostamento
-
-/*function animate()
-{
-            if(div.style.paddingTop!="650px") {
-                div.style.paddingTop = parseInt(div.style.paddingTop) - 2 + "px";
-            }
-            else {
-                div.style.paddingLeft = parseInt(div.style.paddingLeft) - 2 + "px";
-            }
-            id = setTimeout(animate, m_sec);
-}*/
 var x,y;
 var x1,y1;
 var supp=0,supp1=0;
@@ -44,11 +31,11 @@ function spostaPrima ()
         supp=1;
     }
     //inizio controlli
-    if (x>x1 && div_b.style.paddingTop!=parseInt(y1) - 200 + "px" && div_a.style.paddingTop!=parseInt(y) + 200 + "px" && supp1==0)
+    if (x>x1 && div_b.style.paddingTop!=parseInt(y1) - 150 + "px" && div_a.style.paddingTop!=parseInt(y) + 150 + "px" && supp1==0)
     {
         div_b.style.paddingTop = parseInt(div_b.style.paddingTop) - 2 + "px";
         div_a.style.paddingTop = parseInt(div_a.style.paddingTop) + 2 + "px";
-        if (x>x1 && div_b.style.paddingTop==parseInt(y1) - 200 + "px" && div_a.style.paddingTop==parseInt(y) + 200 + "px")
+        if (x>x1 && div_b.style.paddingTop==parseInt(y1) - 150 + "px" && div_a.style.paddingTop==parseInt(y) + 150 + "px")
         {supp1=1;}
     }
     else if (x>x1 && div_b.style.paddingLeft!=parseInt(x) + "px" && div_a.style.paddingLeft!=parseInt(x1)+ "px"&& supp1==1)
@@ -58,7 +45,7 @@ function spostaPrima ()
         if (x>x1 && div_b.style.paddingLeft==parseInt(x) + "px" && div_a.style.paddingLeft==parseInt(x1)+ "px")
         {supp1=2;}
     }
-    else if(x>x1 && div_b.style.paddingTop!=parseInt(y1) + 200 + "px" && div_a.style.paddingTop!=parseInt(y) - 200 + "px" && supp1==2)
+    else if(x>x1 && div_b.style.paddingTop!=parseInt(y1) + 150 + "px" && div_a.style.paddingTop!=parseInt(y) - 150 + "px" && supp1==2)
     {
         div_b.style.paddingTop = parseInt(div_b.style.paddingTop) + 2 + "px";
         div_a.style.paddingTop = parseInt(div_a.style.paddingTop) - 2 + "px";
